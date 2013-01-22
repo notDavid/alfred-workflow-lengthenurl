@@ -1,8 +1,5 @@
 <?
 
-# Something will probably go wrong, 
-# you can either mail me the fix or... the problem at David@Staron.nl :)
-
 require_once('extension_utils.php');
 $utils = new ExtensionUtils();
 
