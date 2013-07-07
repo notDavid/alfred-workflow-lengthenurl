@@ -25,16 +25,28 @@ try {
 	    } else { 
 	  		//echo "$key => $val\n";
 	  		if ($key="long-url") {	
+			    
+				$item = array(
+		        'uid' => 'Lengthen url {query}',
+		         'arg' => $orgplushttp,
+		        'title' => $val,		        
+		        'subtitle' => "Open $orgplushttp in webbrowser",		        
+		        'icon' => 'icon.png',
+		        'valid' => 'yes'
+			    );
+			    array_push( $results, $item );
+
 			    $item = array(
-			        'uid' => 'Lengthen url {query}',
-			        'arg' => $orgplushttp,
-			        'title' => $val,
-			        'subtitle' => "Open $orgplushttp in webbrowser",
+			        'uid' => 'Lengthen url {query}',			        
+			        'arg' => $val,
+			         'title' => $val,
+			         'subtitle' => "Open $val in webbrowser",
 			        'icon' => 'icon.png',
 			        'valid' => 'yes'
 			    );
 			    array_push( $results, $item );
-			    break;
+
+			    break;			    
 	    	}
 	    }
 	}
